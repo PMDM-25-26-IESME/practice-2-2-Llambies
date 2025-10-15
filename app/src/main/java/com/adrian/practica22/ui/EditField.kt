@@ -12,9 +12,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 
+
 @Composable
 fun EditField(
-    @StringRes label: String,
+    @StringRes label: Int,
     @DrawableRes leadingIcon: Int,
     keyboardOptions: KeyboardOptions,
     value: String,
