@@ -40,7 +40,7 @@ fun VatScreen(modifier: Modifier = Modifier) {
         EditField(
             value = name,
             onValueChanged = { name = it },
-            label = stringResource(id = R.string.product_name),
+            label = R.string.product_name,
             leadingIcon = R.drawable.ic_launcher_foreground,
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Text
@@ -50,7 +50,7 @@ fun VatScreen(modifier: Modifier = Modifier) {
         EditField(
             value = price,
             onValueChanged = { price = it },
-            label = stringResource(id = R.string.price),
+            label = R.string.price,
             leadingIcon = R.drawable.ic_launcher_foreground,
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Number
@@ -60,7 +60,7 @@ fun VatScreen(modifier: Modifier = Modifier) {
         EditField(
             value = vat,
             onValueChanged = { vat = it },
-            label = stringResource(id = R.string.vat),
+            label = R.string.vat,
             leadingIcon = R.drawable.ic_launcher_foreground,
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Number
