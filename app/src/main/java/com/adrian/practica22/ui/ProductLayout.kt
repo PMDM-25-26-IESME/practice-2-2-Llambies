@@ -14,6 +14,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
@@ -35,8 +36,8 @@ fun VatScreen(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        Text(text = "Product", style = MaterialTheme.typography.headlineMedium)
-        Spacer(Modifier.height(16.dp))
+        Text(text = "Product", style = MaterialTheme.typography.displayLarge)
+        Spacer(Modifier.height(dimensionResource(R.dimen.padding_small)))
         EditField(
             value = name,
             onValueChanged = { name = it },
@@ -46,7 +47,7 @@ fun VatScreen(modifier: Modifier = Modifier) {
                 keyboardType = KeyboardType.Text
             )
         )
-        Spacer(Modifier.height(8.dp))
+        Spacer(Modifier.height(dimensionResource(R.dimen.padding_small)))
         EditField(
             value = price,
             onValueChanged = { price = it },
@@ -56,7 +57,7 @@ fun VatScreen(modifier: Modifier = Modifier) {
                 keyboardType = KeyboardType.Number
             )
         )
-        Spacer(Modifier.height(8.dp))
+        Spacer(Modifier.height(dimensionResource(R.dimen.padding_small)))
         EditField(
             value = vat,
             onValueChanged = { vat = it },
@@ -66,10 +67,10 @@ fun VatScreen(modifier: Modifier = Modifier) {
                 keyboardType = KeyboardType.Number
             )
         )
-        Spacer(Modifier.height(24.dp))
+        Spacer(Modifier.height(dimensionResource(R.dimen.padding_medium)))
         Text(
             text = "Total price: %.2f €".format(totalPrice),
-            style = MaterialTheme.typography.headlineMedium
+            style = MaterialTheme.typography.displayMedium
         )
     }
 }
