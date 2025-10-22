@@ -5,6 +5,7 @@ import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
@@ -25,10 +26,12 @@ fun EditField(
     TextField(
         value = value,
         onValueChange = onValueChanged,
-        label = { Text(stringResource(label)) },
+        label = { Text(stringResource(label), style = MaterialTheme.typography.labelSmall) },
         leadingIcon = { Icon(painter = painterResource(id = leadingIcon), contentDescription = null) },
         keyboardOptions = keyboardOptions,
         modifier = modifier.fillMaxWidth(),
-        singleLine = true
+        singleLine = true,
+        shape = MaterialTheme.shapes.small,
+        textStyle = MaterialTheme.typography.bodyMedium
     )
 }
