@@ -1,6 +1,14 @@
 <resources>
-    <string name="app_name">Practica 3.1</string>
+    <string name="app_name">VatCalculator</string>
     <string name="product_name">Producto</string>
     <string name="price">Precio base</string>
     <string name="vat">IVA (%)</string>
+    <string name="view_total_price">View total price</string>
+    <string name="back">Back</string>
+    <string name="product_total_price">Product total price</string>
+    <string name="product_label">Product: %s</string>
+    <string name="price_without_vat">Price: %s</string>
+    <string name="vat_amount">IVA: %s</string>
+    <string name="total_amount">TOTAL: %s</string>
+    <string name="share">Share</string>
 </resources>
